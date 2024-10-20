@@ -1,0 +1,16 @@
+:root {
+    --primary-color: #F4F5F9;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 500;
+}
+
+.nav-link {
+    margin: 0 10px;
+}
+
+.primary-bg {
+    background-color: var(--primary-color);
+}
