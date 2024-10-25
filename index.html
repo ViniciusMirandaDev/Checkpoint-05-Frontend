@@ -14,7 +14,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
@@ -40,19 +40,20 @@
             <div
               class="nav-center col text-align-center d-lg-flex justify-content-center"
             >
-              <a class="nav-link" href="#">Coleção 2024</a>
-              <a class="nav-link" href="#">Outlet</a>
-              <a class="nav-link" href="#">Prime</a>
+              <a class="nav-link" href="#colecao">Coleção 2024</a>
+              <a class="nav-link" href="#outlet">Outlet</a>
+              <a class="nav-link" href="#prime">Prime</a>
             </div>
 
-            <div class="d-flex gap-3 ms-auto text-align-end">
-              <a href="#" class="nav-link"
-                ><i class="bi bi-cart"></i> Carrinho</a
-              >
-              <a href="#" class="nav-link"
-                ><i class="bi bi-person-circle"></i> Login</a
-              >
+            <div class="d-flex ms-auto text-align-end flex-column flex-md-row">
+              <a href="#" class="nav-link">
+                <i class="bi bi-cart"></i> Carrinho
+              </a>
+              <a href="#" class="nav-link">
+                <i class="bi bi-person-circle"></i> Login
+              </a>
             </div>
+            
           </div>
         </div>
       </nav>
@@ -60,7 +61,7 @@
 
     <main>
       <section class="container p-4">
-        <div class="row primary-bg py-5 px-4">
+        <div class="row primary-bg py-5 px-4 min-vh-60">
           <div class="col-md-6 d-flex align-items-center">
             <article>
               <h1 class="text-secondary">Nova coleção 2024</h1>
@@ -79,7 +80,7 @@
       </section>
 
       <section class="container mt-5" id="colecao">
-        <h2 class="text-center mb-4">Coleção 2024</h2>
+        <h3 class="text-center mb-4">Coleção 2024</h3>
         <div class="row g-4">
           <div class="col-12 col-sm-4">
             <img
@@ -117,8 +118,8 @@
         </div>
       </section>
 
-      <section class="container mt-5">
-        <h2 class="text-center mb-4">Outlet</h2>
+      <section class="container mt-5" id="outlet">
+        <h3 class="text-center mb-4">Outlet</h3>
         <div class="row g-4">
           <div class="col-12 col-md-6 col-lg-3 mb-5 d-flex flex-column gap-4">
             <img
@@ -219,15 +220,40 @@
         </div>
       </section>
 
-      <section class="container mt-5">
-        <h2 class="text-center mb-4">Prime</h2>
-        <div class="row">
+      <section class="container mt-5" id="prime">
+        <h3 class="text-center mb-4">Prime</h3>
+        <div class="row primary-bg p-4">
           <div class="col-12 col-md-2">
-            <img
-              src="images/product-detail-1.jpg"
-              alt="Produto Prime 1"
-              class="img-fluid"
-            />
+            <div class="row">
+              <div class="col-6 mb-2">
+                <img
+                  src="images/product-detail-1.jpg"
+                  alt="Relógio modelo 1"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-6 mb-2">
+                <img
+                  src="images/product-detail-2.jpg"
+                  alt="Relógio modelo 2"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-6 mb-2">
+                <img
+                  src="images/product-detail-3.jpg"
+                  alt="Relógio modelo 3"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-6 mb-2">
+                <img
+                  src="images/product-detail-4.jpg"
+                  alt="Relógio modelo 4"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
           </div>
           <div class="col-12 col-md-5">
             <div
@@ -238,23 +264,30 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img
+                    src="images/product-detail-1.jpg"
+                    class="d-block w-100"
+                    alt="Relógio modelo 1"
+                  />
+                </div>
+                <div class="carousel-item active">
+                  <img
                     src="images/product-detail-2.jpg"
                     class="d-block w-100"
-                    alt="Produto Prime Carousel 1"
+                    alt="Relógio modelo 2"
                   />
                 </div>
                 <div class="carousel-item">
                   <img
                     src="images/product-detail-3.jpg"
                     class="d-block w-100"
-                    alt="Produto Prime Carousel 2"
+                    alt="Relógio modelo 3"
                   />
                 </div>
                 <div class="carousel-item">
                   <img
                     src="images/product-detail-4.jpg"
                     class="d-block w-100"
-                    alt="Produto Prime Carousel 3"
+                    alt="Relógio modelo 4"
                   />
                 </div>
               </div>
@@ -285,67 +318,99 @@
             </div>
           </div>
           <article class="col-12 col-md-5">
-            <h3>Produto Exclusivo Prime</h3>
-            <p>R$ 299,90</p>
+            <div class="mt-4">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <h3 class="mt-2">Red Digital Watch</h3>
+
+            <h5 class="text-secondary">R$ 9999,99</h5>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a
-              feugiat arcu.
+              feugiat arcu, Lorem ipsum dolor sit amet Lorem ipsum dolor sit
+              amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Donec a feugiat arcu
             </p>
-            <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
-            <a href="#" class="btn btn-link">Adicionar à Lista de Desejos</a>
+            <div>
+              <a href="#" class="btn btn-dark mt-4">Adicionar ao Carrinho</a>
+            </div>
+            <div class="mt-4">
+              <i class="bi bi-heart text-primary me-1"></i
+              ><a href="#" class="link">Adicionar à Lista de Desejos</a>
+            </div>
           </article>
         </div>
       </section>
     </main>
 
-    <footer class="bg-dark text-white mt-5 p-4 text-center">
-      <div class="container">
-        <section>
-          <h3>Assine nossa newsletter</h3>
-          <h3>MatrixShop</h3>
-          <form class="row mt-4" aria-label="Formulário de inscrição">
-            <div class="col-md-6">
-              <input
-                type="email"
-                class="form-control"
-                placeholder="Seu e-mail"
-                aria-label="Insira seu e-mail"
-              />
+    <footer class="bg-dark text-white mt-5 p-4">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <section>
+            <h3>Assine nossa newsletter</h3>
+            <form class="row mt-4" aria-label="Formulário de inscrição">
+              <div class="col-6">
+                <label for="email" class="form-label">E-mail</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Seu e-mail"
+                  aria-label="Insira seu e-mail"
+                />
+              </div>
+              <div class="col-6">
+                <label for="name" class="form-label">Nome</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Seu nome"
+                  aria-label="Insira seu nome"
+                />
+              </div>
+              <div class="col-12 mt-3 d-flex justify-content-end">
+                <a href="#" class="btn btn-outline-light">Assinar Agora</a>
+              </div>
+            </form>
+          </section>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <section class="mt-4 text-center">
+            <h3>MatrixShop</h3>
+            <h5>Baixe nosso app</h5>
+            <div class="mt-4">
+              <a href="#" class="btn btn-outline-light me-2"
+                ><i class="bi bi-google-play me-1"></i>Google Play</a
+              >
+              <a href="#" class="btn btn-outline-light"
+                ><i class="bi bi-apple me-1"></i>Apple Store</a
+              >
             </div>
-            <div class="col-md-6">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Seu nome"
-                aria-label="Insira seu nome"
-              />
+            <div class="mt-4">
+              <a href="#" class="text-white mx-2" aria-label="Instagram"
+                ><i class="bi bi-instagram fs-4"></i
+              ></a>
+              <a href="#" class="text-white mx-2" aria-label="Facebook"
+                ><i class="bi bi-facebook fs-4"></i
+              ></a>
+              <a href="#" class="text-white mx-2" aria-label="Twitter"
+                ><i class="bi bi-twitter-x fs-4"></i
+              ></a>
+              <a href="#" class="text-white mx-2" aria-label="YouTube"
+                ><i class="bi bi-youtube fs-4"></i
+              ></a>
             </div>
-          </form>
-          <div class="mt-4">
-            <a href="#" class="btn btn-outline-light">Assinar Agora</a>
-            <a href="#" class="btn btn-outline-light">Google Play</a>
-            <a href="#" class="btn btn-outline-light">Apple Store</a>
-          </div>
-        </section>
-        <section class="mt-4">
-          <div>
-            <a href="#" class="text-white mx-2" aria-label="Instagram"
-              ><i class="bi bi-instagram fs-4"></i
-            ></a>
-            <a href="#" class="text-white mx-2" aria-label="Facebook"
-              ><i class="bi bi-facebook fs-4"></i
-            ></a>
-            <a href="#" class="text-white mx-2" aria-label="Twitter"
-              ><i class="bi bi-twitter-x fs-4"></i
-            ></a>
-            <a href="#" class="text-white mx-2" aria-label="YouTube"
-              ><i class="bi bi-youtube fs-4"></i
-            ></a>
-          </div>
-          <p class="mt-4 border-top pt-3">
-            Feito por [Seu Nome] e [Nome da Dupla] - RMS [Número RMS]
-          </p>
-        </section>
+          </section>
+        </div>
+
+        <p class="mt-4 border-top pt-3 text-center">
+          Feito por Samuel Okuma e Vinícius Miranda - RMS 555370 e 555081
+        </p>
       </div>
     </footer>
 
